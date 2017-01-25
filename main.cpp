@@ -33,7 +33,7 @@ void printBoard(std::array <std::array <int, 9>, 9> arr)
   
 }
 
-/*Checks wether a number is present in a given row of a sudoku board
+/*Checks whether a number is present in a given row of a sudoku board
   @param row The row in which to check for repetitions
   @param trial The number for which to check repetitions for
   @return bool True if trial is present in row, else False
@@ -49,7 +49,7 @@ bool repeatInRow(std::array < int, 9 > row, int trial)
   return false;
 }
 
-/*Checks wether a number is present in a given column of a sudoku board
+/*Checks whether a number is present in a given column of a sudoku board
   @param arr The whole sudoku board 
   @param trial The number for which to check repetitions for
   @col_no The column number in which to check repetitions
@@ -66,7 +66,7 @@ bool repeatInCol(std::array <std::array <int, 9>, 9> arr, int trial, int col_no)
   return false;
 }
 
-/*Checks wether a number is present in a given sub Quadrant of a sudoku board
+/*Checks whether a number is present in a given sub Quadrant of a sudoku board
 There are 9 subquadants in a sudoku board. We use 'coordinates' for them, 
 [0, 0] being the top left one and [2, 2] the bottom right one
 
@@ -178,7 +178,7 @@ int main(int argc, char const * argv[])
 {
   std::string input =  "850002400720000009004000000000107002305000900040000000000080070017000000000036040";
   std::array < std::array < int, 9 > , 9 > board;  // 9x9 std::array is the board
-  
+
   // Populate the board
   int letter = 0;
   for (int i = 0; i < 9; ++i) {
