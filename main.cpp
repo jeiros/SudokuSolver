@@ -4,7 +4,7 @@
 int solveCalls = 0; // To keep track of how many times solveBoard() is called
 
 
-/*Nicely formats a 9x9 sudoku board
+/*Nicely prints a 9x9 sudoku board
   @param arr a std::array which contains 9 std::arrays of ints
   */
 void printBoard(std::array <std::array <int, 9>, 9> arr)
@@ -177,8 +177,8 @@ bool solveBoard(std::array < std::array < int, 9 > , 9 > &arr)
 int main(int argc, char const * argv[])
 {
   std::string input =  "850002400720000009004000000000107002305000900040000000000080070017000000000036040";
-
   std::array < std::array < int, 9 > , 9 > board;  // 9x9 std::array is the board
+  
   // Populate the board
   int letter = 0;
   for (int i = 0; i < 9; ++i) {
