@@ -176,7 +176,7 @@ bool solveBoard(std::array < std::array < int, 9 > , 9 > &arr)
 
 int main(int argc, char const * argv[])
 {
-  std::string input =  "850002400720000009004000000000107002305000900040000000000080070017000000000036040";
+  std::string input =  "003040009000100008010803020600000002002050003930006500050000100004090000000007030";
   std::array < std::array < int, 9 > , 9 > board;  // 9x9 std::array is the board
 
   // Populate the board
